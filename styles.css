@@ -1,78 +1,26 @@
+/**
+ * @license
+ * Copyright 2024 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* Optional: Makes the sample page fill the window. */
+html,
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: yellow;
+  height: 100%;
+  margin: 0;
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: yellow;
-    color: black;
+#floating-panel {
+  background-color: white;
+  border: 1px solid #999;
+  line-height: 30px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 350px;
 }
 
-header h1 {
-    margin: 0;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.blog-posts {
-    flex: 2;
-    margin-right: 20px;
-}
-
-.post {
-    background-color: #222;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.post h2 {
-    margin-top: 0;
-}
-
-/* Extras Section */
-.extras {
-    flex: 1;
-}
-
-#map, #external-link {
-    background-color: #333;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#map p {
-    margin: 0;
-}
-
-#external-link a {
-    color: yellow;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#external-link a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: yellow;
-    color: black;
+#latlng {
+  width: 225px;
 }
