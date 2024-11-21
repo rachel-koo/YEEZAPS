@@ -1,38 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Blog</h1>
-    </header>
-    <main>
-        <section class="blog-posts">
-            <article class="post">
-                <h2>Post Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at libero at ex hendrerit consectetur.</p>
-            </article>
-            <article class="post">
-                <h2>Another Post</h2>
-                <p>Fusce volutpat nunc nec velit tincidunt, non blandit metus pharetra. Vestibulum at arcu lectus.</p>
-            </article>
-        </section>
-        <section class="extras">
-            <div id="map">
-                <!-- Map Placeholder -->
-                <p>Map Placeholder</p>
-            </div>
-            <div id="external-link">
-                <a href="https://example.com" target="_blank">Visit External Website</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 My Blog</p>
-    </footer>
-</body>
+  <body>
+    <gmp-map center="40.731,-73.997" zoom="8" map-id="DEMO_MAP_ID">
+      <div id="floating-panel" slot="control-block-start-inline-center">
+        <input id="latlng" type="text" value="40.714224,-73.961452"/>
+        <input id="submit" type="button" value="Reverse Geocode"/>
+      </div>
+      <gmp-advanced-marker></gmp-advanced-marker>
+    </gmp-map>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&libraries=marker&v=beta&solution_channel=GMP_CCS_reversegeocoding_v3"
+      defer
+    ></script>
+  </body>
 </html>
